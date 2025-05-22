@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles_home.css">
+    <title>CivIQ</title>
+</head>
+<body>
+    <!--chatbot starts-->
+    <div class="chatbot">
+        <div class="BACK">
+            <div class="Back">
+                Back
+            </div>
+            <ul>
+                <li>
+                    <a href="./home-page.html" class="back_img">
+                        <img src="./images/back.svg" class="back_img" alt="backimg">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bot">
+            <img src="./images/bot.svg" alt="bot">
+        </div>
+
+        <div class="t_chatbot">
+            ChatBot
+        </div>
+
+        <div class="blur"></div>
+
+        <div class="hello">
+            <h id="message">Hello!....</h>
+        </div>
+
+        <div class="t2">
+            How can I help you today?
+        </div>
+
+        <div class="prompt-box"></div>
+
+        <form3>
+            <label2 for="Queries"></label2>
+            <input type="text" id="queries" name="queries" placeholder="Give a prompt.......">
+        </form3>
+        <div class="enterport">
+            <div class="e-box"></div>
+
+            <ul>
+                <li>
+                    <a href="#" class="btn3">Enter</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--chatbot ends-->
+
+    <!--script file js-->
+    <!--<script src="./main.js"></script>-->
+    <script>
+    // Step 1: Read the username from the URL
+    const params = new 
+    URLSearchParams(window.location.search);
+    const username = params.get('username');
+
+    // Step 2: Show the name in the message
+    if (username) {
+      document.getElementById("message").textContent = `Hello, ${username}`;
+    }
+  </script>
+</body>
+</html>
